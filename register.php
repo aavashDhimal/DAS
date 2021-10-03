@@ -76,7 +76,7 @@ include('src/functions.php');
                                             <div class="col-lg-4 col-md-4 col-sm-6">
                                                 <label class="control-label">First name <span class="required">*</span>
                                                 </label>
-                                                <input type="text" class="wp-form-control wpcf7-text" placeholder="First name" name="fname" value="<? echo $fname ?>" required pattern="[A-Za-z-0-9]+">
+                                                <input type="text" class="wp-form-control wpcf7-text" placeholder="First name" name="fname" value="<?= $fname ?>" required pattern="[A-Za-z-0-9]+">
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-6">
                                                 <label class="control-label">Last name <span class="required">*</span>

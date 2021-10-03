@@ -27,7 +27,8 @@ include('src/functions.php');
         $server_path = '';
         if ($data == 'doctor') {
             $server_path = "docreports";
-        } else if ($data == 'test') {
+        } 
+         if ($data == 'test') {
             $server_path = "testreports";
         }
         #normal data type varible
@@ -47,7 +48,8 @@ include('src/functions.php');
         /*echo "file type is ".$file_type.'<br>';
     echo "file size is ".$file_size.'<br>';
     echo "file orig name is ".$file_o_name.'<br>';*/
-        if ($file_type == "application/pdf") {
+       
+     if ($file_type == "application/pdf") {
             #after the file gets validated now lets upload
             #lets create a server path before uploading
 
@@ -61,6 +63,7 @@ include('src/functions.php');
             $upload = move_uploaded_file($_FILES['img']['tmp_name'], $server_path) or die($_FILES['img']['error']);
             if ($upload) {
                 #save data
+              if($data=='doctor'){
                 $saveData = mysqli_query($con, "UPDATE doctor_app SET Report='$server_path' WHERE Id='$id' ") or die(mysqli_error($con));
                 if ($saveData) {
                     echo '
@@ -69,7 +72,23 @@ include('src/functions.php');
                   window.location.href = "upload.php";
                 </script>
                 ';
+                
+                
                 }
+                }
+                if($data=='test'){
+                    $saveData = mysqli_query($con, "UPDATE test_appointment SET Report='$server_path' WHERE Id='$id' ") or die(mysqli_error($con));
+                    if ($saveData) {
+                        echo '
+                    <script>
+                      alert("Uploaded Sucessfully");
+                      window.location.href = "upload.php";
+                    </script>
+                    ';
+                    
+                    
+                    }
+                    }
             }
         } else {
             echo '

@@ -7,7 +7,7 @@
                 <img alt="" src="images/14.jpg">
             </div>
             <div class="slider-text">
-                <h2>An <strong>Best Treatment</strong> for your Healthy Lifestyle</h2>
+                <h2> <strong>Best Treatment</strong> for your Healthy Lifestyle</h2>
                 <p><strong>DA System</strong> Doctor Apoointment System
                 </p>
                 <!-- <div class="readmore_area">

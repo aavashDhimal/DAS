@@ -6,7 +6,7 @@ include('src/functions.php');
 <html lang="en">
 
 <head>
-    <title>SPA Pathcare : Update</title>
+    <title>DA System : Update</title>
     <?php include('src/head.php') ?>
 </head>
 

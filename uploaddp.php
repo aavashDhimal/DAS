@@ -35,7 +35,7 @@ if ($file_type == "image/jpeg") {
     if ($upload) {
         
         if ($_SESSION['log1'] == "client") {
-            $saveData = mysqli_query($con, "UPDATE user SET Dp='$server_path' WHERE Id='$id' ") or die(mysqli_error($con));
+            $saveData = mysqli_query($con, "UPDATE client SET Dp='$server_path' WHERE Id='$id' ") or die(mysqli_error($con));
         } else if ($_SESSION['log1'] == "doctor") {
             $saveData = mysqli_query($con, "UPDATE doctor SET Dp='$server_path' WHERE Id='$id' ") or die(mysqli_error($con));
         }

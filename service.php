@@ -23,7 +23,7 @@ include('src/config.php');
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="service-area">
-                        <!-- Start Service Title -->
+                      
                         <div class="section-heading">
                             <h2>Test</h2>
                             <div class="line"></div>

@@ -6,7 +6,7 @@ include('src/functions.php');
 <html lang="en">
 
 <head>
-    <title>SPA Pathcare : Insert</title>
+    <title>DAS : Insert</title>
     <?php include('src/head.php') ?>
 </head>
 
@@ -75,7 +75,7 @@ include('src/functions.php');
                                                 <div class="col-lg-2 col-md-2"></div>
                                                 <div class="col-lg-8 col-md-8 col-sm-6">
                                                     <label class="control-label">Name <span class="required">*</span></label>
-                                                    <input type="text" class="wp-form-control wpcf7-text" name="testname" required value="<?= $_POST['testname'] ?>">
+                                                    <input type="text" class="wp-form-control wpcf7-text" name="testname" required value="<?=isset( $_POST['testname'] )?>">
                                                 </div>
                                                 <div class="col-lg-2 col-md-2"></div>
                                             </div>
@@ -83,7 +83,7 @@ include('src/functions.php');
                                                 <div class="col-lg-2 col-md-2"></div>
                                                 <div class="col-lg-8 col-md-8 col-sm-6">
                                                     <label class="control-label">Fees <span class="required">*</span></label>
-                                                    <input type="number" class="wp-form-control wpcf7-text" name="testfee" required value="<?= $_POST['testfee'] ?>">
+                                                    <input type="number" class="wp-form-control wpcf7-text" name="testfee" required value="<?= isset($_POST['testfee']) ?>">
                                                 </div>
                                                 <div class="col-lg-2 col-md-2"></div>
                                             </div>
@@ -112,7 +112,7 @@ include('src/functions.php');
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <div class="service-area">
-                            <!-- Start Service Title -->
+                        
                             <div class="section-heading">
                                 <h2>Add Doctor</h2>
                                 <div class="line"></div>
@@ -126,12 +126,12 @@ include('src/functions.php');
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <label class="control-label">First name <span class="required">*</span>
                                                     </label>
-                                                    <input type="text" class="wp-form-control wpcf7-text" placeholder="First name" name="fname" required pattern="[A-Za-z-0-9]+" value="<?= $_POST['fname'] ?>">
+                                                    <input type="text" class="wp-form-control wpcf7-text" placeholder="First name" name="fname" required pattern="[A-Za-z-0-9]+" value="<?=isset( $_POST['fname'] )?>">
                                                 </div>
                                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <label class="control-label">Last name <span class="required">*</span>
                                                     </label>
-                                                    <input type="text" class="wp-form-control wpcf7-text" placeholder="Last name" name="lname" required pattern="[A-Za-z-0-9]+" value="<?= $_POST['lname'] ?>">
+                                                    <input type="text" class="wp-form-control wpcf7-text" placeholder="Last name" name="lname" required pattern="[A-Za-z-0-9]+" value="<?= isset($_POST['lname']) ?>">
                                                 </div>
                                                 <div class="col-lg-2 col-md-2"></div>
                                             </div>
@@ -139,7 +139,7 @@ include('src/functions.php');
                                                 <div class="col-lg-2 col-md-2"></div>
                                                 <div class="col-lg-8 col-md-8 col-sm-6">
                                                     <label class="control-label">Email <span class="required">*</span></label>
-                                                    <input type="email" class="wp-form-control wpcf7-text" placeholder="Email address" name="mail" required value="<?= $_POST['mail'] ?>">
+                                                    <input type="email" class="wp-form-control wpcf7-text" placeholder="Email address" name="mail" required value="<?= isset($_POST['mail']) ?>">
                                                 </div>
                                                 <div class="col-lg-2 col-md-2"></div>
                                             </div>
@@ -147,7 +147,7 @@ include('src/functions.php');
                                                 <div class="col-lg-2 col-md-2"></div>
                                                 <div class="col-lg-8 col-md-8 col-sm-6">
                                                     <label class="control-label">Date of Birth <span class="required">*</span></label>
-                                                    <input type="date" class="wp-form-control wpcf7-text" placeholder="dd/mm/yy" max="<?= date("Y-m-d") ?>" name="dob" required value="<?= $_POST['dob'] ?>">
+                                                    <input type="date" class="wp-form-control wpcf7-text" placeholder="dd/mm/yy" max="<?= date("Y-m-d") ?>" name="dob" required value="<?= isset($_POST['dob']) ?>">
                                                 </div>
                                                 <div class="col-lg-2 col-md-2"></div>
                                             </div>
@@ -167,7 +167,7 @@ include('src/functions.php');
                                                 <div class="col-lg-2 col-md-2"></div>
                                                 <div class="col-lg-8 col-md-8 col-sm-6">
                                                     <label class="control-label">Address <span class="required">*</span></label>
-                                                    <input type="text" class="wp-form-control wpcf7-text" placeholder="Address" name="addr" required value="<?= $_POST['addr'] ?>">
+                                                    <input type="text" class="wp-form-control wpcf7-text" placeholder="Address" name="addr" required value="<?= isset($_POST['addr']) ?>">
                                                 </div>
                                                 <div class="col-lg-2 col-md-2"></div>
                                             </div>
@@ -175,7 +175,7 @@ include('src/functions.php');
                                                 <div class="col-lg-2 col-md-2"></div>
                                                 <div class="col-lg-8 col-md-8 col-sm-6">
                                                     <label class="control-label">Phone <span class="required">*</span></label>
-                                                    <input type="number" class="wp-form-control wpcf7-text" placeholder="Phone No" name="phno" required value="<?= $_POST['phno'] ?>">
+                                                    <input type="number" class="wp-form-control wpcf7-text" placeholder="Phone No" name="phno" required value="<?= isset($_POST['phno']) ?>">
                                                 </div>
                                                 <div class="col-lg-2 col-md-2"></div>
                                             </div>
@@ -183,7 +183,7 @@ include('src/functions.php');
                                                 <div class="col-lg-2 col-md-2"></div>
                                                 <div class="col-lg-8 col-md-8 col-sm-6">
                                                     <label class="control-label">Password <span class="required">*</span></label>
-                                                    <input type="password" class="wp-form-control wpcf7-text" placeholder="Password" name="pwd" required value="<?= $_POST['pwd'] ?>">
+                                                    <input type="password" class="wp-form-control wpcf7-text" placeholder="Password" name="pwd" required value="<?=isset( $_POST['pwd'] )?>">
                                                 </div>
                                                 <div class="col-lg-2 col-md-2"></div>
                                             </div>
@@ -191,7 +191,7 @@ include('src/functions.php');
                                                 <div class="col-lg-2 col-md-2"></div>
                                                 <div class="col-lg-8 col-md-8 col-sm-6">
                                                     <label class="control-label">Fees <span class="required">*</span></label>
-                                                    <input type="text" class="wp-form-control wpcf7-text" placeholder="Fees" name="fee" required value="<?= $_POST['fee'] ?>">
+                                                    <input type="text" class="wp-form-control wpcf7-text" placeholder="Fees" name="fee" required value="<?= isset($_POST['fee']) ?>">
                                                 </div>
                                                 <div class="col-lg-2 col-md-2"></div>
                                             </div>
@@ -199,7 +199,7 @@ include('src/functions.php');
                                                 <div class="col-lg-2 col-md-2"></div>
                                                 <div class="col-lg-8 col-md-8 col-sm-6">
                                                     <label class="control-label">Category <span class="required">*</span></label>
-                                                    <input type="text" class="wp-form-control wpcf7-text" placeholder="Category" name="category" required value="<?= $_POST['category'] ?>">
+                                                    <input type="text" class="wp-form-control wpcf7-text" placeholder="Category" name="category" required value="<?= isset($_POST['category']) ?>">
                                                 </div>
                                                 <div class="col-lg-2 col-md-2"></div>
                                             </div>

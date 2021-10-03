@@ -202,9 +202,9 @@ include('src/config.php');
     }
     ?>
 
-    <!--=========== Start Footer SECTION ================-->
+  
     <?php include('src/footer.php') ?>
-    <!--=========== End Footer SECTION ================-->
+    
 
     <?php include('src/incfooter.php') ?>
 </body>
