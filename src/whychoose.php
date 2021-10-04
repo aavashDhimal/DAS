@@ -16,7 +16,7 @@
                         <div class="whyChoose-left">
                             <div class="whychoose-slider">
                                 <div class="whychoose-singleslide">
-                                    <img src="images/choose-us-img1.jpg" alt="img">
+                                    <img src="images/choose.jfif" alt="img">
                                 </div>
                                 <div class="whychoose-singleslide">
                                     <img src="images/choose-us-img2.jpg" alt="img">

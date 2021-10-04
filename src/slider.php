@@ -18,7 +18,7 @@
       
         <div class="top-slide-inner">
             <div class="slider-img">
-                <img alt="" src="images/15.jpg">
+                <img alt="" src="images/15.jfif">
             </div>
             <div class="slider-text">
                 <h2><strong>Best Treatment</strong> For your Healthy Lifestyle</h2>

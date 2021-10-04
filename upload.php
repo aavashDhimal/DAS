@@ -39,6 +39,7 @@ include('src/functions.php');
                                         <thead>
                                             <tr>
                                                 <th>Test</th>
+                                                <th>Patient</th>
                                                 <th>Date</th>
                                                 <th>Time</th>
                                                 <th>Upload</th>
@@ -49,11 +50,15 @@ include('src/functions.php');
                                             $sql = mysqli_query($con, "SELECT * FROM test_appointment ");
                                             while ($row = mysqli_fetch_array($sql)) {
                                                 $test = $row['Test_id'];
+                                                $user = $row['Users_id'];
+                                                $sql3 = mysqli_query($con, "SELECT * FROM client WHERE Id='$user' ");
                                                 $sql2 = mysqli_query($con, "SELECT * FROM test WHERE id='$test' ");
                                                 $row2 = mysqli_fetch_array($sql2);
+                                                $row3 = mysqli_fetch_array($sql3);
                                             ?>
                                                 <tr>
                                                     <th scope="row"><?= $row2['test_name'] ?></th>
+                                                    <td><?= $row3['Name'] ?></td>
                                                     <td><?= $row['Test_date'] ?></td>
                                                     <td><?= $row['Test_time'] ?></td>
                                                     <td><a href="uploadcode.php?data=test&id=<?= $row['Id'] ?>">Upload</a></td>

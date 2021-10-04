@@ -131,7 +131,7 @@
                             <h3>Emergency</h3>
                             <p>In case Of Emergency here are </br>some Information</p>
                             <div class="readmore_area">
-                                <a data-hover="Appoinment" data-target="#yModal" data-toggle="modal" href="#">
+                                <a data-hover="Read More" data-target="#yModal" data-toggle="modal" href="#">
                                     <span>Emergency Info</span>
                                 </a>
                             </div>
